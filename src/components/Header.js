@@ -1,15 +1,14 @@
 import react, { Fragment } from 'react'
 
-const Headercolor =  (props) => {
+const Headercolor = ({isActive, setClicked, children}) => {
     
 
-    const clickMe = (prop) => {
-        console.log('Clicked', props.children);
-        props.setClicked(prop) 
-        
+    const clickMe = (name) => {
+        console.log(name)
+        setClicked(name)      
     }; 
 
-    const element = <a onClick={() => clickMe(props.children)} className={ props.isActive ? 'capitalize text-blue-700' : 'capitalize'} >{props.children} </a>;
+    const element = <a onClick={() => clickMe(children)} className={isActive ? 'capitalize text-blue-700' : 'capitalize'} >{children} </a>;
 
         
     return (

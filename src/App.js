@@ -1,10 +1,10 @@
-import './App.css';
+//import './App.css';
 import React, {useState} from 'react';
 import Headercolor from './components/Header';
 
 const App = () => {
   
-      const [isClicked, setClicked] = useState()
+      const [isClicked, setClicked] = useState('home')
     
   return(
     <div className=" h-screen w-screen bg-white">
