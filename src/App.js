@@ -1,5 +1,5 @@
 import Header from './components/Header';
 
-const App = () => <Header />;
+const Mainpage = () => <Header />;
 
-export default App;
+export default Mainpage;
