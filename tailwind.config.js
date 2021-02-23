@@ -3,14 +3,16 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        'headerbgimage': "url('./images/headerimage.png')",
+      backgroundImage: () => ({
+        headerbgimage: "url('./images/headerimage.png')",
+        homeimage1: "url('./images/bamboocup.png')",
+        homeimage2: "url('./images/bamboochair2.jpg')",
+        homeimage3: "url('./images/bamboobed.jpg')",
       }),
-  
+    },
   },
-},
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
