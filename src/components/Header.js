@@ -14,7 +14,7 @@ const Header = () => {
   };
   return (
     <div>
-      <div className="fixed bg-yellow-600 h-12 w-full flex justify-center items-center text-xl text-white">
+      <div className="fixed bg-yellow-600 h-12 w-full flex justify-center md:text-xl text-sm text-white">
         {menus.map((menu) => (
           <button
             type="button"
@@ -22,8 +22,8 @@ const Header = () => {
             onClick={() => handleMenu(menu)}
             className={
               isClicked === menu.value
-                ? 'pl-12 capitalize text-blue-700 hover:text-black cursor-pointer'
-                : 'pl-12 capitalize hover:text-black cursor-pointer'
+                ? 'md:pl-12 pl-4 capitalize text-blue-700 hover:text-black cursor-pointer'
+                : 'md:pl-12 pl-4 capitalize hover:text-black cursor-pointer'
             }
           >
             {menu.value}
