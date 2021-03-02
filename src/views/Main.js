@@ -7,8 +7,8 @@ import Footer from '../components/Footer';
 const Main = () => {
   return (
     <>
-      <Header />
-      <div className="h-screen">
+      <div className=" relative h-screen">
+        <Header />
         <Router>{renderRoutes(routes)}</Router>
         <Footer />
       </div>

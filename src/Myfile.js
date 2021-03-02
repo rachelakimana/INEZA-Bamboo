@@ -27,7 +27,8 @@ const Myfile = () => {
       {menu.value}
     </button>
   ));
-  /* <div className="pl-12 capitalize hover:text-black cursor-pointer">
+  /* https://reactjsexample.com/react-burger-menu-an-off-canvas-sidebar-react-component-with-a-collection-of-effects/
+  <div className="pl-12 capitalize hover:text-black cursor-pointer">
           <Headercolor isActive={isClicked === 'home'} setClicked={setClicked}>
             home
           </Headercolor>
