@@ -1,6 +1,6 @@
 const Homepage = () => (
   <>
-    <div className="md:h-3/4 h-2/5 flex w-full bg-blue-400 bg-headerbgimage bg-cover bg-center bg-no-repeat" />
+    <div className="md:h-3/4 h-2/5 flex w-full bg-headerbgimage bg-cover bg-center bg-no-repeat" />
     <div className="h-auto md:pb-12 pb-4 md:px-20 px-4 text-justify">
       <h1 className="md:text-4xl text-2xl md:pt-8 pt-6 text-yellow-700 font-bold ">
         Who we are?

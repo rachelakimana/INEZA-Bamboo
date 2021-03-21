@@ -4,7 +4,8 @@ import routes from '../routes';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 // eslint-disable-next-line arrow-body-style
-const Main = () => {
+const Main = (props) => {
+  console.log(props);
   return (
     <>
       <div className=" relative h-screen">

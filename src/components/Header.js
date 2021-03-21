@@ -8,12 +8,13 @@ const Header = () => {
   const [showMEnu, setShowMenu] = useState(false);
   const menus = [
     { id: 1, value: 'home', link: '/home' },
-    { id: 2, value: 'services', link: '/services' },
-    { id: 3, value: 'about', link: '/about' },
+    { id: 2, value: 'gallery', link: '/gallery' },
+    { id: 3, value: 'about us', link: '/about' },
     { id: 4, value: 'contact', link: '/contact' },
   ];
   const handleMenu = (menu) => {
     setClicked(menu.value);
+    // history.push(menu.link);
     window.location.replace(menu.link);
   };
   const handleShowMenu = () => {
@@ -21,19 +22,21 @@ const Header = () => {
   };
   return (
     <>
-      <div className="hidden fixed bg-yellow-600 h-12 w-full md:flex justify-center text-xl text-white">
-        {menus.map((menu) => (
-          <button
-            type="button"
-            key={menu.id}
-            onClick={() => handleMenu(menu)}
-            className={` pl-12 capitalize hover:text-black cursor-pointer ${
-              isClicked === menu.value ? ' text-blue-700 ' : ''
-            }`}
-          >
-            {menu.value}
-          </button>
-        ))}
+      <div className="hidden h-12 w-full md:flex text-xl text-white">
+        <div className="fixed bg-yellow-600 h-12 w-full flex justify-center">
+          {menus.map((menu) => (
+            <button
+              type="button"
+              key={menu.id}
+              onClick={() => handleMenu(menu)}
+              className={` pl-12 capitalize hover:text-black cursor-pointer focus:outline-none ${
+                isClicked === menu.value ? ' text-blue-700 ' : ''
+              }`}
+            >
+              {menu.value}
+            </button>
+          ))}
+        </div>
       </div>
       {showMEnu && (
         <div className="md:hidden z-40 absolute top-0 left-0 bg-yellow-600 h-screen w-2/3">
@@ -54,7 +57,7 @@ const Header = () => {
                   type="button"
                   key={menu.id}
                   onClick={() => handleMenu(menu)}
-                  className={`p-4 text-lg capitalize font-bold hover:text-black cursor-pointer w-full   ${
+                  className={`p-4 text-lg capitalize font-bold hover:text-black cursor-pointer w-full focus:outline-none ${
                     isClicked === menu.value ? ' text-blue-700 ' : ''
                   }`}
                 >

@@ -2,7 +2,7 @@ import { Redirect } from 'react-router-dom';
 
 import Aboutpage from './views/About';
 import contactpage from './views/Contact';
-import Servicepage from './views/Services';
+import Gallerypage from './views/Gallery';
 import Homepage from './views/Home';
 
 const routes = [
@@ -22,9 +22,9 @@ const routes = [
     component: contactpage,
   },
   {
-    path: '/services',
+    path: '/gallery',
     exact: true,
-    component: Servicepage,
+    component: Gallerypage,
   },
   {
     component: () => <Redirect to="/home" />,
